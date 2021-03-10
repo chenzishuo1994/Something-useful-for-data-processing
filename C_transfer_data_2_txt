@@ -1,0 +1,7 @@
+/*use to storage the data*/
+void data_storage(double data1,double data2,double data3){
+    FILE *fp;
+    fp = fopen("MPC_data.txt","w+");
+    fprintf(fp,"\nx=%f y=%f",data1,data2);
+    fclose(fp);
+    }
